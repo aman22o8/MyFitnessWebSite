@@ -8,7 +8,7 @@ import { AiOutlineFileProtect } from 'react-icons/ai';
 import { GiShinyApple } from 'react-icons/gi';
 import { GrUserExpert } from 'react-icons/gr';
 import { ImNext, ImPrevious } from 'react-icons/im';
-import egg from '../assets/egg.webp'
+import egg from '../assets/t-image3.jpg'
 
 const About = () => {
 

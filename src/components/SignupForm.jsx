@@ -48,7 +48,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
     };
 
     try {
-      const response = await fetch('', {
+      const response = await fetch(`https://fitness-server-u793.onrender.com/user/${accountType.toLowerCase()}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -58,6 +58,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
       console.log(response);
 
       const responseData = await response.json();
+      console.log(responseData)
       if (response.ok) {
         navigate("/login");
         console.log("Server Response:", response);
